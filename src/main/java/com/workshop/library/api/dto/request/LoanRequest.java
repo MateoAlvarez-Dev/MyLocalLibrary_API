@@ -28,7 +28,6 @@ public class LoanRequest {
     @Future(message = "Return date must be in the future")
     private LocalDateTime returnDate;
 
-    @Pattern(regexp = "ACTIVE|INACTIVE", message = "Status must be either 'ACTIVE' or 'INACTIVE'")
     private StatusType status;
     @NotNull(message = "User ID cannot be null")
     private Long user_id;
